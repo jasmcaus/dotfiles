@@ -1,7 +1,7 @@
 @echo off
 
 set "commitmessage=%1"
-if "%commitmessage%"=="" set "commitmessage=Commit"
+if "%commitmessage%"=="" set "commitmessage=Add vscode"
 
 set "branch=%2"
 if "%branch%"=="" set "branch=dev"
