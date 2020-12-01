@@ -1,73 +1,115 @@
 {
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.iconTheme": "material-icon-theme",
+    // Files
     "files.autoSave": "afterDelay",
-    "editor.fontFamily": "'Source Code Pro'",
-    "editor.wordWrap": "on",
-    "editor.wordWrapColumn": 120,
-    "editor.lineHeight": 24,
-    "editor.fontSize": 13,
-    // "editor.cursorStyle": "block",
-    // "editor.cursorBlinking": "blink",
-    "workbench.settings.editor": "json",
-    "workbench.colorCustomizations": {
-        "scrollbarSlider.hoverBackground": "#b3b3b3e7",
-        "editor.foreground": "#A6ACCD",
-        "editorLineNumber.foreground": "#a5a2a2",
-        "editorCursor.background": "#dbb50b",
-        "editorLineNumber.activeForeground": "#c0c0c0",
-        "activityBar.border": "#131313",
-        "activityBar.foreground": "#ffffff",
-        "activityBar.background": "#090B10",
-        "statusBar.background": "#0c0f14",
-        "editorCursor.foreground": "#FFCB6B",
-        "editor.background": "#151824",
-        "sideBar.background": "#11131d",
-        "terminalCursor.foreground": "#FFCB6B",
-    },
-
-    "workbench.settings.useSplitJSON": true,
-    "terminal.integrated.cursorBlinking": true,
-    
-    "editor.tokenColorCustomizations": {
-        "comments": "#ebebeb",
-    },
-
-    "window.zoomLevel": 0,
-    "explorer.confirmDelete": false,
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
-    "workbench.colorTheme": "Atom One Dark",
-    "liveServer.settings.donotShowInfoMsg": true,
-    "git.autofetch": true,
-    "git.enableSmartCommit": true,
-    "git.confirmSync": false,
-    "java.home": "C:\\Program Files\\Java\\jdk-14.0.1",
-    "java.help.firstView": "gettingStarted",
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "java.semanticHighlighting.enabled": true,
     "files.exclude": {
         "**/.classpath": true,
         "**/.project": true,
         "**/.settings": true,
         "**/.factorypath": true
     },
-    "python.languageServer": "Jedi",
-    // "python.jediEnabled": true,
-    "extensions.ignoreRecommendations": false,
-    "python.dataScience.alwaysTrustNotebooks": true,
-    "python.dataScience.sendSelectionToInteractiveWindow": true,
-    "explorer.confirmDragAndDrop": false,
-    "python.showStartPage": false,
-    "materialTheme.accent": "Remove accents",
+
+    // Editor
+    "editor.fontFamily": "'Source Code Pro'",
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 120,
+    "editor.lineHeight": 24,
+    "editor.fontSize": 12,
+    "editor.suggestSelection": "first",
+    // "editor.cursorStyle": "block",
+    // "editor.cursorBlinking": "blink",
+    "editor.tokenColorCustomizations": {
+        "comments": "#ebebeb",
+    },
+
+    // Workbench
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.settings.editor": "json",
+
+    "workbench.colorCustomizations": {
+        // Activity Bar
+        "activityBar.border": "#131313",
+        "activityBar.foreground": "#ffffff",
+        "activityBar.background": "#191c24",
+        "statusBar.background": "#0c0f14",
+        
+        // Editor
+        "editorCursor.foreground": "#FFCB6B",
+        "editor.foreground": "#A6ACCD",
+        "editor.background": "#24292e",
+        "editor.lineHighlightBackground": "#2b3036",
+        "editor.selectionBackground": "#717CB450",
+        "editorLineNumber.foreground": "#a5a2a2",
+        "editorCursor.background": "#f7ba4a",
+        "editorLineNumber.activeForeground": "#c0c0c0",
+        "editorWhitespace.foreground": "#8F93A240",
+
+        // Terminal
+        "terminalCursor.foreground": "#f7ba4a",
+
+        // Tab
+        "tab.activeBorderTop": "#f7ba4a",
+
+        // Scrollbar
+        "scrollbarSlider.hoverBackground": "#b3b3b3e7",
+
+        // Panel
+        "panel.border": "#1d2125",
+        "panel.background": "#1d2125",
+        "panel.dropBackground": "#8F93A2",
+        "panelTitle.inactiveForeground": "#8F93A2",
+        "panelTitle.activeForeground": "#FFFFFF",
+        "panelTitle.activeBorder": "#f7ba4a",
+
+        // Misc
+        "settings.checkboxForeground": "#8F93A2",
+        "listFilterWidget.background": "#00000030",
+        "listFilterWidget.outline": "#00000030",
+        "listFilterWidget.noMatchesOutline": "#00000030",
+        "tree.indentGuidesStroke": "#3B3F51"
+    },
+
+    "workbench.editorAssociations": [
+        {
+          "viewType": "jupyter-notebook",
+          "filenamePattern": "*.ipynb"
+        }
+      ],
+    "workbench.settings.useSplitJSON": true,
+    "workbench.colorTheme": "Atom One Dark",
+    
+    // Terminal
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+
+    "window.zoomLevel": 0,
+    "explorer.confirmDelete": false,
+
+    // Extensions
+    "liveServer.settings.donotShowInfoMsg": true,
+
+    // Git
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+
+    // Java
+    "java.home": "C:\\Program Files\\Java\\jdk-14.0.1",
+    "java.help.firstView": "gettingStarted",
+    "java.semanticHighlighting.enabled": true,
     "java.refactor.renameFromFileExplorer": "autoApply",
+
+    // Python
+    "python.languageServer": "Jedi",
+    "python.showStartPage": false,
+    // "python.jediEnabled": true,
+    "extensions.ignoreRecommendations": true,
+    "explorer.confirmDragAndDrop": false,
+
+    // CMake
     "cmake.configureOnOpen": false,
-    // "python.linting.pylintArgs": [
-    //     "--disable=C0303",
-    //     "--disable=C0301",
-    //     "--disable=C0103",
-    //     "--disable=C0326",
-    //     "--disable=E1101",
-    //     "--disable=E1121",
-    // ]
+
+    // Jupyter
+    "jupyter.alwaysTrustNotebooks": true,
+    "jupyter.sendSelectionToInteractiveWindow": true,
 }
