@@ -4,7 +4,7 @@
 
 [alias]
 	#### See <https://github.com/GitAlias/gitalias>
-	
+
 	##
 	# One letter alias for our most frequent commands.
 	#
@@ -74,11 +74,13 @@
 	# commit with a message
 	cm = commit --message
 
+
 	### checkout ###
 
 	# checkout - update the working tree to match a branch or paths. [same as "o" for "out"]
 	co = checkout
 	con = checkout --no-guess
+
 
 	### cherry-pick ###
 
@@ -94,6 +96,7 @@
 	# cherry-pick without making a commit, and when when recording the commit, append a line that says "(cherry picked from commit ...)"
 	cp-nx = cherry-pick --no-commit -x
 
+
 	### diff ###
 
 	# diff - show changes not yet staged
@@ -108,10 +111,12 @@
 	# diff deep - show changes with our preferred options. Also aliased as `diff-deep`.
 	dd = diff --check --dirstat --find-copies --find-renames --histogram --color
 
+
 	### clean ###
 
 	# clean everything to be pristine
 	cleanest = clean -ffdx
+
 
 	### grep ###
 
@@ -123,6 +128,7 @@
 
 	# grep group - search with our preferred options. Also aliased as `grep-group`.
 	gg = grep --break --heading --line-number --color
+
 
 	### log ###
 
@@ -147,6 +153,7 @@
 	# log like long  - we like this summarization our key performance indicators. Also aliased as `log-like-long`.
 	lll = log --graph --topo-order --date=iso8601-strict --no-abbrev-commit --abbrev=40 --decorate --all --boundary --pretty=format:'%Cgreen%ad %Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue[%cn <%ce>]%Creset %Cblue%G?%Creset'
 
+
 	## ls-files ##
 
 	# ls-files - show information about files in the index and the working tree; like Unix "ls" command.
@@ -154,6 +161,7 @@
 
 	# ls-ignored -  list files that git has ignored.
 	ls-ignored = ls-files --others --i --exclude-standard
+
 
 	### merge ###
 
@@ -238,6 +246,7 @@
 	#
 	pp = pull --rebase=preserve
 
+
 	### rebase ###
 
 	# rebase - forward-port local commits to the updated upstream head.
@@ -286,30 +295,33 @@
 	# This is a slightly modified version
 	fixup = "!f() { TARGET=$(git rev-parse \"$1\"); git commit --fixup=$TARGET && GIT_EDITOR=true git rebase --interactive --autosquash $TARGET~; }; f"
 
+
 	### reflog ###
 
 	# reflog - reference log that manages when tips of branches are updated.
 	rl = reflog
 
+
 	### remote ###
 
 	# remote - manage set of tracked repositories [same as "r"].
-	rr = remote
+	r = remote
 
 	# remote show - gives some information about the remote <name>.
-	rrs = remote show
+	rs = remote show
 
 	# remote update - fetch updates for a named set of remotes in the repository as defined by remotes.
-	rru = remote update
+	ru = remote update
 
 	# remote prune - deletes all stale remote-tracking branches under <name>.
-	rrp = remote prune
+	rp = remote prune
 
 	incoming = !git remote update --prune; git log ..@{upstream}
 	outgoing = log @{upstream}..
 
 	# Push to all remotes
 	push-to-all-remotes = !git remote | xargs -I% -n1 git push %
+
 
 	### revert ###
 
@@ -319,10 +331,12 @@
 	# revert without autocommit; useful when you're reverting more than one commits' effect to your index in a row.
 	rvnc = revert --no-commit
 
+
 	### show-branch ###
 
 	# show-branch - print a list of branches and their commits.
 	sb = show-branch
+
 
 	### submodule ###
 
@@ -347,6 +361,7 @@
 	# submodule update with initialize and recursive; this is useful to bring a submodule fully up to date.
 	smuir = submodule update --init --recursive
 
+
 	### status ###
 
 	# status with short format instead of full details
@@ -354,6 +369,7 @@
 
 	# status with short format and showing branch and tracking info.
 	ssb = status --short --branch
+
 
 	### ALIAS MANAGEMENT ###
 
@@ -380,6 +396,7 @@
 	heads = !"git log origin/master.. --format='%Cred%h%Creset;%C(yellow)%an%Creset;%H;%Cblue%f%Creset' | git name-rev --stdin --always --name-only | column -t -s';'"
 	lost = !"git fsck | awk '/dangling commit/ {print $3}' | git show --format='SHA1: %C(yellow)%h%Creset %f' --stdin | awk '/SHA1/ {sub(\"SHA1: \", \"\"); print}'"
 
+
 	### diff-* ###
 
 	diff-all = !"for name in $(git diff --name-only $1); do git difftool $1 $name & done"
@@ -389,6 +406,7 @@
 
 	# Diff using our preferred options. A.k.a. `dd`.
 	diff-deep = diff --check --dirstat --find-copies --find-renames --histogram --color
+
 
 	### grep-* ###
 
@@ -405,10 +423,12 @@
 		-c color.grep.match=\"reverse yellow\" \
 		grep --break --heading --line-number
 
+
 	### init ###
 
 	# initalize a repo and immediate add an empty commit, which makes rebase easier.
 	init-empty = !"f() { git init && git commit --allow-empty --allow-empty-message --message ''; }; f"
+
 
 	### merge-* ###
 
@@ -448,6 +468,7 @@
 	# List all objects by size in bytes and file name.
 	# By [raphinesse](https://stackoverflow.com/users/380229/raphinesse)
 	rev-list-all-objects-by-size-and-name = !"git rev-list --all --objects | git cat-file --batch-check='%(objecttype) %(objectname) %(objectsize) %(rest)' | awk '/^blob/ {print substr($0,6)}' | sort --numeric-sort --key=2"
+
 
 	### LOG ALIASES ###
 
@@ -691,9 +712,11 @@
 		printf \"\nMost-active files, with churn count\n\"; git churn | head -7; \
 	}; f"
 
+
 	### REF ALIASES ###
 
 	ref-recent = "!git for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short) %(objectname:short) %(contents:subject)' refs/heads/"
+
 
 	### LOOKUP ALIASES ###
 
