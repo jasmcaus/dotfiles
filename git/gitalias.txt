@@ -1,0 +1,87 @@
+[user]
+	name = Jason Dsouza
+	email = jasmcaus@gmail.com
+
+[alias]
+
+	a = add
+	b = branch
+	c = commit
+	d = diff
+	f = fetch
+	g = grep
+	l = log
+	m = merge
+	o = checkout
+	p = pull
+	r = remote
+	s = status
+	w = whatchanged
+
+    # add all
+	aa = add --all
+
+    ### branch ###
+
+	# branch description
+	bd = !"git config branch.$(git rev-parse --abbrev-ref HEAD 2>/dev/null).description"
+
+	# bra nch - edit the description
+	be = branch --edit-description
+
+	# branch and only list branches whose tips are reachable from the specified commit (HEAD if not specified).
+	bm = branch --merged
+
+	# branch and only list branches whose tips are not reachable from the specified commit (HEAD if not specified).
+	bnm = branch --no-merged
+
+    # commit with a message
+	cm = commit --message
+
+
+	### checkout ###
+
+	# checkout - update the working tree to match a branch or paths. [same as "o" for "out"]
+	co = checkout
+
+    ### merge ###
+
+	# merge 
+	me = merge
+
+    ### remote ###
+
+	# remote - manage set of tracked repositories [same as "r"].
+	r = remote
+
+    # remote - add 
+    ra = remote add 
+
+	# remote show - gives some information about the remote <name>.
+	rs = remote show
+
+	# remote update - fetch updates for a named set of remotes in the repository as defined by remotes.
+	ru = remote update
+
+	# remote prune - deletes all stale remote-tracking branches under <name>.
+	rp = remote prune
+
+	incoming = !git remote update --prune; git log ..@{upstream}
+	outgoing = log @{upstream}..
+
+	# Push to all remotes
+	push-to-all-remotes = !git remote | xargs -I% -n1 git push %
+
+
+    ### show-branch ###
+
+	# show-branch - print a list of branches and their commits.
+	sb = show-branch
+
+    ### status ###
+
+	# status with short format instead of full details
+	ss = status --short
+
+	# status with short format and showing branch and tracking info.
+	ssb = status --short --branch
