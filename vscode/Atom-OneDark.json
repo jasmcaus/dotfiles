@@ -949,7 +949,7 @@
             "scope": [
                 "source.json meta.structure.dictionary.json > value.json > string.quoted.json","source.json meta.structure.array.json > value.json > string.quoted.json","source.json meta.structure.dictionary.json > value.json > string.quoted.json > punctuation","source.json meta.structure.array.json > value.json > string.quoted.json > punctuation"],
             "settings":{
-                "foreground":"#98C379"
+                "foreground":"#7CB851" 
             }
         },
         {

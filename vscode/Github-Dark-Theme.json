@@ -71,7 +71,7 @@
         "statusBar.foreground": "#9DA5B4",
         "statusBar.background": "#0c0f14",
         "statusBar.border": "#1b1f23",
-        "statusBar.noFolderBackground": "#24292e",
+        "statusBar.noFolderBackground": "#24292e", 
         "statusBar.debuggingBackground": "#931c06",
         "statusBar.debuggingForeground": "#fff",
         "statusBarItem.prominentBackground": "#282e34",
@@ -137,12 +137,6 @@
         "panelInput.border": "#2f363d",
         "terminal.foreground": "#d1d5da",
         "terminalCursor.foreground": "#f7ba4a",
-        "gitDecoration.addedResourceForeground": "#34d058",
-        "gitDecoration.modifiedResourceForeground": "#79b8ff",
-        "gitDecoration.deletedResourceForeground": "#ea4a5a",
-        "gitDecoration.ignoredResourceForeground": "#6a737d",
-        "gitDecoration.conflictingResourceForeground": "#ffab70",
-        "gitDecoration.submoduleResourceForeground": "#6a737d",
         "debugToolBar.background": "#2b3036",
         "editor.stackFrameHighlightBackground": "#C6902625",
         "editor.focusedStackFrameHighlightBackground": "#2b6a3033",
@@ -232,7 +226,7 @@
             "string punctuation.section.embedded source"
         ],
         "settings": {
-            "foreground": "#98C379"
+            "foreground": "#79b8ff"
         }
         },
         {
@@ -513,4 +507,4 @@
         }
         }
     ]
-}
+  }
