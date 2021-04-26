@@ -1,19 +1,19 @@
-name: Build docs
+name: Test
 
 on:
   push:
       branches:
-        - master
+        - dev
   release:
       branches:
-        - master
+        - dev
       
 env:
     PYTHON_VERSION: 3.x
 
 jobs:
   docs:
-    name: Building Docs
+    name: Testing
     runs-on: ubuntu-latest
 
     steps:
