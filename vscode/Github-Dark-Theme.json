@@ -42,8 +42,6 @@
         "activityBar.border": "#131313",
         "sideBar.background": "#1f2428",
         "sideBar.border": "#1b1f23",
-        "sideBarTitle.foreground": "#e1e4e8",
-        "sideBarSectionHeader.foreground": "#e1e4e8",
         "sideBarSectionHeader.background": "#1f2428",
         "sideBarSectionHeader.border": "#1b1f23",
         "list.hoverForeground": "#e1e4e8",
