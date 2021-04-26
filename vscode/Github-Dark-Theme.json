@@ -78,6 +78,12 @@
         "editorGroupHeader.tabsBackground": "#1f2428",
         "editorGroupHeader.tabsBorder": "#1b1f23",
         "editorGroup.border": "#1b1f23",
+        "editorSuggestWidget.background":"#21252B",
+        "editorSuggestWidget.border":"#181A1F",
+        "editorSuggestWidget.selectedBackground":"#2C313A",
+        "editorSuggestWidget.highlightForeground":"#ffffff",
+        "editorHoverWidget.background":"#21252B",
+        "editorHoverWidget.border":"#181A1F",
         "tab.activeForeground": "#e1e4e8",
         "tab.inactiveForeground": "#959da5",
         "tab.inactiveBackground": "#1f2428",
@@ -508,4 +514,4 @@
         }
         }
     ]
-  }
+}
