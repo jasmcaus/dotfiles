@@ -2,9 +2,10 @@
     "name": "hazel-flow",
     "displayName": "Hazel Flow",
     "description": "The theme created by Jason Dsouza at Hazel",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "jasmcaus",
     "license": "MIT",
+    "icon": "icon.png",
     "engines": {
         "vscode": "^1.43.0"
     },
