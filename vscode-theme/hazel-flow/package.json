@@ -1,0 +1,36 @@
+{
+    "name": "hazel-flow",
+    "displayName": "Hazel Flow",
+    "description": "The theme created by Jason Dsouza at Hazel",
+    "version": "0.0.1",
+    "publisher": "jasmcaus",
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.43.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/jasmcaus/dotfiles"
+	},
+    "keywords": [
+		"theme",
+		"dark theme",
+		"hazel",
+		"hazel lang",
+		"jason",
+		"dsouza",
+		"dark"
+	],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Hazel Flow Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/hazel-flow-dark.json"
+            }
+        ]
+    }
+}
