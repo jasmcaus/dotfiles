@@ -1,0 +1,3 @@
+{
+    "buildcmd": "E:\\Applications\\Microsoft^ Visual^ Studio^ 2019\\BuildTools\\Common7\\Tools\\VsDevCmd.bat && cl"
+}

@@ -1,0 +1,37 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: cl.exe build active file",
+			// "command": "cl.exe",
+			"command": "${config:buildcmd}", // Look in settings.json
+			"args": [
+				"/std:c11",
+				"/Zi",
+				"/EHsc",
+				"/nologo",
+				"/I",
+				"/${workspaceFolder}",
+				"/I",
+				"${workspaceFolder}/Arrow",
+				"/I",
+				"E:/Applications/Microsoft Visual Studio 2019/BuildTools/VC/Tools/MSVC/14.28.29910/include",
+				"/Fe:",
+				"${workspaceFolder}/msvctest.exe",
+				"${file}"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: cl.exe"
+		}
+	]
+}
