@@ -9,14 +9,14 @@
     },
 
     // Editor
-    "editor.fontFamily": "'Source Code Pro'",
+    "editor.fontFamily": "'Cascadia Mono'",
     "editor.wordWrap": "on",
     "editor.wordWrapColumn": 120,
     "editor.lineHeight": 24,
     "editor.fontSize": 12,
     "editor.suggestSelection": "first",
-    // "editor.cursorStyle": "block",
-    // "editor.cursorBlinking": "blink",
+    "editor.cursorStyle": "block",
+    "editor.cursorBlinking": "phase",
     "editor.tokenColorCustomizations": {
         "comments": "#ebebeb",
     },
@@ -69,18 +69,16 @@
         "tree.indentGuidesStroke": "#3B3F51"
     },
 
-    "workbench.editorAssociations": [
-        {
-          "viewType": "jupyter-notebook",
-          "filenamePattern": "*.ipynb"
-        }
-      ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "workbench.editor.untitled.hint": "hidden",
     "workbench.settings.useSplitJSON": true,
-    "workbench.colorTheme": "Atom One Dark",
-    
+    "workbench.colorTheme": "Hazel Flow Dark",    
+
     // Terminal
     "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
 
     "window.zoomLevel": 0,
     "explorer.confirmDelete": false,
@@ -111,5 +109,5 @@
 
     // Jupyter
     "jupyter.alwaysTrustNotebooks": true,
-    "jupyter.sendSelectionToInteractiveWindow": true,
+    "jupyter.sendSelectionToInteractiveWindow": true
 }
