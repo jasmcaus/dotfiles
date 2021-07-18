@@ -1,11 +1,15 @@
 # ~/.zshrc file for zsh interactive shells.
 # see /usr/share/doc/zsh/examples/zshrc for examples
 
-# Custom aliases
+# Custom Aliases
 alias python='python3'
-alias sourcet='source ~/.zshrc'
+alias sai='sudo apt install'
+alias sar='sudo apt remove'
+alias saar='sudo apt autoremove'
 alias sau='sudo apt update'
+alias sourcet='source ~/.zshrc'
 alias cdev='cd ~/Documents/dev'
+alias root='sudo su'
 
 setopt autocd              # change directory just by typing its name
 #setopt correct            # auto correct mistakes
