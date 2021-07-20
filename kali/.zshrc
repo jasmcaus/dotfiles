@@ -10,6 +10,9 @@ alias sau='sudo apt update'
 alias sourcet='source ~/.zshrc'
 alias cdev='cd ~/Documents/dev'
 alias root='sudo su'
+alias btstart='/etc/init.d/bluetooth start'
+alias mp='mousepad'
+alias upzs='sudo cp -r ~/.zshrc ~/Documents/dev/dotfiles/kali'
 
 setopt autocd              # change directory just by typing its name
 #setopt correct            # auto correct mistakes
